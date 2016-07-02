@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PokeapiExample</string>
+    <string name="random_pokemon_desc">Random description about the pokemon</string>
+    <string name="please_wait">Please wait...</string>
+</resources>
