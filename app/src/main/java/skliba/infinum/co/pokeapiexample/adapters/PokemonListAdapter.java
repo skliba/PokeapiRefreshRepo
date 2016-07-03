@@ -38,12 +38,23 @@ public class PokemonListAdapter extends RecyclerView.Adapter<PokemonListAdapter.
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        //bind shizzle
+        holder.pokemonName.setText(pokemonArrayList.get(position).getName());
+
+        /*holder.pokemonShortStats.setText(
+                context.getString(
+                        R.string.short_desc_pokemon,
+                        pokemonArrayList.get(position).getHp(),
+                        pokemonArrayList.get(position).getAttack()));
+        String imgType = "R.drawable." + pokemonArrayList.get(position).getTypes().get(0).getTypeName();
+        Glide.with(context)
+                .load(imgType)
+                .into(holder.typeImg);*/
+
     }
 
     @Override
     public int getItemCount() {
-        return pokemonArrayList.size();
+        return pokemonArrayList != null ? pokemonArrayList.size() : 0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

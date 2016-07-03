@@ -16,6 +16,6 @@ public class HostModule {
     @Provides
     @Singleton
     public String provideBaseUrl() {
-        return "http://pokeapi.co/";
+        return "https://pokeapi.co/";
     }
 }
